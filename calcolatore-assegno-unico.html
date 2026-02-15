@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolatore Assegno Unico 2026 — Calcola Quanto Ti Spetta | CrescereFacile.it</title>
+    <meta name="description"
+        content="Calcolatore gratuito Assegno Unico Universale 2026: inserisci ISEE, numero figli ed età per sapere quanto ti spetta ogni mese. Importi aggiornati.">
+    <meta name="keywords"
+        content="calcolo assegno unico, simulazione assegno unico, quanto spetta assegno unico 2026, calcolatore assegno unico ISEE">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://crescerefacile.it/calcolatore-assegno-unico.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Calcolatore Assegno Unico 2026 — Scopri Quanto Ti Spetta">
+    <meta property="og:description"
+        content="Calcola l'importo del tuo Assegno Unico in base a ISEE, numero figli, età e maggiorazioni.">
+    <meta property="og:url" content="https://crescerefacile.it/calcolatore-assegno-unico.html">
+    <meta property="og:site_name" content="CrescereFacile.it">
+    <meta property="og:locale" content="it_IT">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Calcolatore Assegno Unico Universale 2026",
+    "url": "https://crescerefacile.it/calcolatore-assegno-unico.html",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Web Browser",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+    "author": { "@type": "Organization", "name": "CrescereFacile.it" },
+    "inLanguage": "it-IT"
+  }
+  </script>
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Quanto vale l'assegno unico per figlio nel 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "L'importo varia da €57,00 a €199,40 al mese per figlio minorenne, in base all'ISEE. Con ISEE fino a €17.979,88 si riceve l'importo massimo. Senza ISEE o con ISEE oltre €45.616,27 si ha l'importo minimo di €57,00."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Serve l'ISEE per ricevere l'assegno unico?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, l'assegno unico spetta a tutti i nuclei con figli a carico, anche senza ISEE. Senza ISEE si riceve l'importo minimo (€57,00/figlio/mese). Presentando l'ISEE si possono ottenere importi fino a €199,40, quindi è fortemente consigliato richiederlo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quali maggiorazioni esistono per l'assegno unico?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Le maggiorazioni principali sono: figli sotto 1 anno (+€114,40), figli 1-3 anni con 3+ figli (+€96,90), dal 3° figlio in poi (+€96,90), figli con disabilità (+€96,90-€119,60), entrambi genitori lavoratori (+€24-€34,10), madre under 21 (+€22,80)."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+    <div class="top-banner">
+        🧮 Importi aggiornati a <strong>Febbraio 2026</strong> — D.Lgs. 230/2021 e rivalutazione ISTAT
+    </div>
+
+    <nav class="navbar" role="navigation" aria-label="Navigazione principale">
+        <div class="container">
+            <a href="index.html" class="nav-logo" aria-label="CrescereFacile homepage">
+                <div class="nav-logo-icon">🌱</div>
+                <div class="nav-logo-text">Crescere<span>Facile</span></div>
+            </a>
+            <button class="nav-toggle" aria-label="Apri menu" aria-expanded="false">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bonus-famiglia.html">Bonus Famiglia</a></li>
+                <li><a href="guida-asilo-nido.html">Asilo Nido</a></li>
+                <li><a href="calcolatore-congedo.html">Calcolatore Congedo</a></li>
+                <li><a href="guida-dsa-bes.html">DSA e BES</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li>›</li>
+                <li>Calcolatore Assegno Unico</li>
+            </ul>
+            <h1>Calcolatore Assegno Unico 2026</h1>
+            <p class="lead">Calcola in pochi secondi l'importo del tuo Assegno Unico Universale. Inserisci i dati della
+                tua famiglia e scopri quanto ti spetta ogni mese, con tutte le maggiorazioni.</p>
+        </div>
+    </header>
+
+    <div class="page-content">
+        <div class="container content-layout">
+
+            <main class="content-main article">
+
+                <!-- Calculator Tool -->
+                <div class="calc-wrapper">
+                    <h2 style="margin:0 0 var(--sp-2) 0; font-size: 1.4rem;">🧮 Calcola il tuo Assegno Unico</h2>
+                    <p style="color: var(--clr-text-muted); margin-bottom: var(--sp-8); font-size:0.95rem;">Inserisci i
+                        dati della tua famiglia per ottenere una stima dell'importo mensile.</p>
+
+                    <form id="assegno-form" class="calc-form">
+                        <div class="form-group">
+                            <label for="isee">ISEE familiare (€)</label>
+                            <input type="number" id="isee" class="form-input" placeholder="es. 25000" min="0"
+                                max="200000" step="100">
+                            <small>Lascia vuoto se non hai l'ISEE (riceverai l'importo minimo)</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="num-figli">Numero figli a carico</label>
+                            <select id="num-figli" class="form-select" required>
+                                <option value="1">1 figlio</option>
+                                <option value="2" selected>2 figli</option>
+                                <option value="3">3 figli</option>
+                                <option value="4">4 figli</option>
+                                <option value="5">5 figli</option>
+                                <option value="6">6+ figli</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="figli-sotto-1">Figli con meno di 1 anno</label>
+                            <select id="figli-sotto-1" class="form-select">
+                                <option value="0">Nessuno</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="figli-1-3">Figli tra 1 e 3 anni</label>
+                            <select id="figli-1-3" class="form-select">
+                                <option value="0">Nessuno</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            <small>Maggiorazione solo se hai 3+ figli totali</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="figli-disabili">Figli con disabilità</label>
+                            <select id="figli-disabili" class="form-select">
+                                <option value="0">Nessuno</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>&nbsp;</label>
+                            <div
+                                style="display: flex; flex-direction: column; gap: var(--sp-3); padding-top: var(--sp-2);">
+                                <label
+                                    style="font-weight: 400; font-size: 0.95rem; display: flex; align-items: center; gap: var(--sp-3); cursor: pointer;">
+                                    <input type="checkbox" id="due-genitori-lavoratori"
+                                        style="width:18px; height:18px; accent-color: var(--clr-primary);">
+                                    Entrambi i genitori lavorano
+                                </label>
+                                <label
+                                    style="font-weight: 400; font-size: 0.95rem; display: flex; align-items: center; gap: var(--sp-3); cursor: pointer;">
+                                    <input type="checkbox" id="madre-under-21"
+                                        style="width:18px; height:18px; accent-color: var(--clr-primary);">
+                                    Madre con meno di 21 anni
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group full-width" style="margin-top: var(--sp-4);">
+                            <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">
+                                🧮 Calcola Assegno Unico
+                            </button>
+                        </div>
+                    </form>
+
+                    <div id="assegno-results" class="calc-results"></div>
+                </div>
+
+                <div class="info-box tip">
+                    <div class="info-box-title">💡 Nota</div>
+                    <p>Questo calcolatore fornisce una <strong>stima indicativa</strong> basata sugli importi 2026.
+                        L'importo effettivo viene calcolato dall'INPS in base alla situazione specifica. Per la guida
+                        completa a tutti i bonus, visita la nostra <a href="bonus-famiglia.html">pagina Bonus
+                            Famiglia</a>.</p>
+                </div>
+
+                <hr style="margin: var(--sp-12) 0; border: none; border-top: 2px solid var(--clr-divider);">
+
+                <h2 id="tabella-isee">Tabella Importi per Fascia ISEE</h2>
+
+                <p>Ecco gli importi mensili <strong>per figlio minorenne</strong> dell'Assegno Unico in base alla fascia
+                    ISEE:</p>
+
+                <div class="data-table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Fascia ISEE</th>
+                                <th>Importo mensile/figlio</th>
+                                <th>Importo annuo/figlio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Fino a €17.979,88</td>
+                                <td><strong>€199,40</strong></td>
+                                <td>€2.392,80</td>
+                            </tr>
+                            <tr>
+                                <td>€20.000</td>
+                                <td>€186,00</td>
+                                <td>€2.232,00</td>
+                            </tr>
+                            <tr>
+                                <td>€25.000</td>
+                                <td>€158,00</td>
+                                <td>€1.896,00</td>
+                            </tr>
+                            <tr>
+                                <td>€30.000</td>
+                                <td>€116,00</td>
+                                <td>€1.392,00</td>
+                            </tr>
+                            <tr>
+                                <td>€35.000</td>
+                                <td>€86,00</td>
+                                <td>€1.032,00</td>
+                            </tr>
+                            <tr>
+                                <td>€40.000</td>
+                                <td>€67,00</td>
+                                <td>€804,00</td>
+                            </tr>
+                            <tr>
+                                <td>Oltre €45.616,27 o senza ISEE</td>
+                                <td><strong>€57,00</strong></td>
+                                <td>€684,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <hr style="margin: var(--sp-12) 0; border: none; border-top: 2px solid var(--clr-divider);">
+
+                <h2 id="maggiorazioni">Riepilogo Maggiorazioni</h2>
+
+                <div class="data-table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Maggiorazione</th>
+                                <th>Importo mensile</th>
+                                <th>Condizione</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Figlio sotto 1 anno</td>
+                                <td>+€114,40/figlio</td>
+                                <td>Per ogni figlio con meno di 12 mesi</td>
+                            </tr>
+                            <tr>
+                                <td>Figlio 1-3 anni</td>
+                                <td>+€96,90/figlio</td>
+                                <td>Solo se nucleo con 3+ figli</td>
+                            </tr>
+                            <tr>
+                                <td>Dal 3° figlio in poi</td>
+                                <td>+€96,90/figlio</td>
+                                <td>Per ogni figlio dal 3° in poi</td>
+                            </tr>
+                            <tr>
+                                <td>Figlio con disabilità</td>
+                                <td>+€96,90 – €119,60</td>
+                                <td>In base al grado di disabilità</td>
+                            </tr>
+                            <tr>
+                                <td>Entrambi genitori lavoratori</td>
+                                <td>+€24,00 – €34,10</td>
+                                <td>In base all'ISEE</td>
+                            </tr>
+                            <tr>
+                                <td>Madre under 21</td>
+                                <td>+€22,80/figlio</td>
+                                <td>Per ogni figlio</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <hr style="margin: var(--sp-12) 0; border: none; border-top: 2px solid var(--clr-divider);">
+
+                <h2 id="come-richiederlo">Come Richiedere l'Assegno Unico</h2>
+
+                <ol>
+                    <li>Accedi al <a href="https://www.inps.it" target="_blank" rel="noopener">portale INPS</a> con
+                        SPID, CIE o CNS</li>
+                    <li>Cerca "Assegno Unico e Universale per i Figli a Carico"</li>
+                    <li>Compila la domanda inserendo i dati di <strong>tutti i figli a carico</strong></li>
+                    <li>Indica l'<strong>ISEE</strong> (o lascia senza ISEE per l'importo minimo)</li>
+                    <li>Scegli la modalità di pagamento: IBAN o ricarica su carta</li>
+                    <li>L'INPS eroga l'assegno ogni mese, generalmente nella <strong>terza settimana del mese</strong>
+                    </li>
+                </ol>
+
+                <div class="info-box important">
+                    <div class="info-box-title">📅 Rinnovo annuale</div>
+                    <p>La domanda di Assegno Unico non va rinnovata ogni anno. Tuttavia, per mantenere gli importi
+                        aggiornati, devi <strong>rinnovare l'ISEE entro il 28 febbraio</strong> di ogni anno. Se l'ISEE
+                        non viene aggiornato, da marzo riceverai l'importo minimo (€57/figlio).</p>
+                </div>
+
+                <!-- FAQ -->
+                <h2 id="faq" style="margin-top: var(--sp-16);">Domande Frequenti</h2>
+
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question">Quanto vale l'assegno unico per figlio nel 2026?<span
+                                class="arrow">▼</span></button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">L'importo varia da €57,00 a €199,40 al mese per figlio
+                                minorenne, in base all'ISEE. Con ISEE fino a €17.979,88 si riceve l'importo massimo.
+                                Senza ISEE o con ISEE oltre €45.616,27 si ha l'importo minimo di €57,00. A questi
+                                importi si aggiungono le maggiorazioni (figli piccoli, disabilità, ecc.).</div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Serve l'ISEE per ricevere l'assegno unico?<span
+                                class="arrow">▼</span></button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">No, l'assegno unico spetta a tutti i nuclei con figli a
+                                carico, anche senza ISEE. Senza ISEE si riceve l'importo minimo (€57,00/figlio/mese).
+                                Presentando l'ISEE si possono ottenere importi fino a €199,40, quindi è fortemente
+                                consigliato richiederlo.</div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Quali maggiorazioni esistono?<span class="arrow">▼</span></button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">Le maggiorazioni principali sono: figli sotto 1 anno
+                                (+€114,40), figli 1-3 anni con 3+ figli (+€96,90), dal 3° figlio in poi (+€96,90), figli
+                                con disabilità (+€96,90-€119,60), entrambi genitori lavoratori (+€24-€34,10 per figlio),
+                                madre under 21 (+€22,80 per figlio).</div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Quando viene pagato l'assegno unico?<span
+                                class="arrow">▼</span></button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">L'INPS eroga l'Assegno Unico ogni mese, generalmente nella
+                                terza settimana del mese. Il pagamento avviene tramite bonifico sull'IBAN indicato nella
+                                domanda. In caso di genitori separati, l'importo può essere diviso al 50% tra i due
+                                genitori.</div>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+
+            <aside class="sidebar">
+                <div class="sidebar-card">
+                    <h4>📑 In questa pagina</h4>
+                    <ul class="sidebar-links">
+                        <li><a href="#assegno-form">🧮 Calcolatore</a></li>
+                        <li><a href="#tabella-isee">Tabella ISEE</a></li>
+                        <li><a href="#maggiorazioni">Maggiorazioni</a></li>
+                        <li><a href="#come-richiederlo">Come Richiederlo</a></li>
+                        <li><a href="#faq">Domande Frequenti</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar-card">
+                    <h4>🔗 Guide correlate</h4>
+                    <ul class="sidebar-links">
+                        <li><a href="bonus-famiglia.html">Tutti i Bonus Famiglia 2026</a></li>
+                        <li><a href="bonus-mamme-lavoratrici.html">Bonus Mamme Lavoratrici</a></li>
+                        <li><a href="calcolatore-congedo.html">🧮 Calcolatore Congedo</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar-card"
+                    style="text-align:center; color: var(--clr-text-muted); font-size:0.85rem; min-height:250px; display:flex; align-items:center; justify-content:center; background: var(--grad-warm);">
+                    <span>— Spazio pubblicitario —</span>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo" style="margin-bottom: var(--sp-2);">
+                        <div class="nav-logo-icon">🌱</div>
+                        <div class="nav-logo-text" style="color:white;">Crescere<span>Facile</span></div>
+                    </a>
+                    <p>Il portale italiano di guide gratuite per famiglie e genitori.</p>
+                </div>
+                <div>
+                    <h4>Guide</h4>
+                    <ul class="footer-links">
+                        <li><a href="bonus-famiglia.html">Bonus Famiglia 2026</a></li>
+                        <li><a href="guida-asilo-nido.html">Guida Asilo Nido</a></li>
+                        <li><a href="calcolatore-congedo.html">Calcolatore Congedo</a></li>
+                        <li><a href="guida-dsa-bes.html">Guida DSA e BES</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Altre Guide</h4>
+                    <ul class="footer-links">
+                        <li><a href="congedo-maternita.html">Congedo Maternità</a></li>
+                        <li><a href="bonus-mamme-lavoratrici.html">Bonus Mamme</a></li>
+                        <li><a href="vaccini-obbligatori.html">Vaccini Obbligatori</a></li>
+                        <li><a href="guida-scuola-infanzia.html">Scuola dell'Infanzia</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Info</h4>
+                    <ul class="footer-links">
+                        <li><a href="chi-siamo.html">Chi siamo</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 CrescereFacile.it — Tutti i diritti riservati</span>
+                <span>Le informazioni hanno carattere informativo e non sostituiscono la consulenza
+                    professionale.</span>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/assegno-unico.js"></script>
+</body>
+
+</html>

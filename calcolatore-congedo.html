@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolatore Congedo Parentale 2026 — Giorni e Retribuzione | CrescereFacile.it</title>
+    <meta name="description"
+        content="Calcola i giorni di congedo parentale disponibili e la retribuzione spettante nel 2026. Strumento gratuito per madri e padri lavoratori dipendenti.">
+    <meta name="keywords"
+        content="congedo parentale retribuzione, quanti giorni congedo parentale, calcolo congedo parentale 2026, congedo maternità, congedo paternità, congedo facoltativo">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://crescerefacile.it/calcolatore-congedo.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Calcolatore Congedo Parentale 2026 — Giorni e Retribuzione">
+    <meta property="og:description"
+        content="Calcola gratis i tuoi giorni di congedo parentale e la retribuzione spettante.">
+    <meta property="og:url" content="https://crescerefacile.it/calcolatore-congedo.html">
+    <meta property="og:site_name" content="CrescereFacile.it">
+    <meta property="og:locale" content="it_IT">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Calcolatore Congedo Parentale 2026",
+    "description": "Strumento gratuito per calcolare i giorni di congedo parentale e la retribuzione spettante in Italia.",
+    "url": "https://crescerefacile.it/calcolatore-congedo.html",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Web",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+    "author": { "@type": "Organization", "name": "CrescereFacile.it" },
+    "inLanguage": "it-IT"
+  }
+  </script>
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Quanti giorni di congedo parentale spettano nel 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ogni genitore ha diritto a un massimo di 6 mesi di congedo parentale, con un limite complessivo per coppia di 10 mesi (11 se il padre usa almeno 3 mesi). Il congedo è fruibile nei primi 12 anni di vita del figlio."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quanto si guadagna durante il congedo parentale?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nel 2026, il primo mese di congedo è retribuito all'80% dello stipendio (per ciascun genitore). Il secondo mese aggiuntivo al 60%. I restanti mesi sono al 30% fino ai 6 anni del bambino, poi non retribuiti salvo reddito basso."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+    <div class="top-banner">
+        🧮 Calcolatore aggiornato alla <strong>normativa 2026</strong> — D.Lgs. 105/2022 e Legge di Bilancio 2026
+    </div>
+
+    <nav class="navbar" role="navigation" aria-label="Navigazione principale">
+        <div class="container">
+            <a href="index.html" class="nav-logo" aria-label="CrescereFacile homepage">
+                <div class="nav-logo-icon">🌱</div>
+                <div class="nav-logo-text">Crescere<span>Facile</span></div>
+            </a>
+            <button class="nav-toggle" aria-label="Apri menu" aria-expanded="false">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bonus-famiglia.html">Bonus Famiglia</a></li>
+                <li><a href="guida-asilo-nido.html">Asilo Nido</a></li>
+                <li><a href="calcolatore-congedo.html" class="active">Calcolatore Congedo</a></li>
+                <li><a href="guida-dsa-bes.html">DSA e BES</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li>›</li>
+                <li>Calcolatore Congedo Parentale</li>
+            </ul>
+            <h1>Calcolatore Congedo Parentale 2026</h1>
+            <p class="lead">Calcola gratuitamente i giorni di congedo disponibili e la retribuzione spettante.
+                Aggiornato alla normativa 2026 per lavoratori dipendenti.</p>
+        </div>
+    </header>
+
+    <div class="page-content">
+        <div class="container content-layout">
+
+            <main class="content-main article">
+
+                <!-- Calculator -->
+                <div class="calc-wrapper" id="calcolatore">
+                    <h2 style="margin-top:0; border:none; padding:0; margin-bottom:var(--sp-6);">🧮 Calcola il Tuo
+                        Congedo</h2>
+
+                    <div class="calc-form" id="congedo-form">
+                        <div class="form-group">
+                            <label for="genitore">Tipo di genitore</label>
+                            <select class="form-select" id="genitore">
+                                <option value="madre">Madre</option>
+                                <option value="padre">Padre</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contratto">Tipo di contratto</label>
+                            <select class="form-select" id="contratto">
+                                <option value="dipendente">Lavoratore/trice dipendente</option>
+                                <option value="determinato">Contratto a tempo determinato</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="ral">RAL (Retribuzione Annua Lorda)</label>
+                            <input type="number" class="form-input" id="ral" placeholder="Es: 28000" min="0" step="100">
+                            <small>Lo stipendio lordo annuale indicato in busta paga</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="data-nascita">Data di nascita del figlio</label>
+                            <input type="date" class="form-input" id="data-nascita">
+                            <small>O data presunta se ancora in attesa</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mesi-gia-usati">Mesi di congedo parentale già utilizzati</label>
+                            <select class="form-select" id="mesi-gia-usati">
+                                <option value="0">Nessuno (0 mesi)</option>
+                                <option value="1">1 mese</option>
+                                <option value="2">2 mesi</option>
+                                <option value="3">3 mesi</option>
+                                <option value="4">4 mesi</option>
+                                <option value="5">5 mesi</option>
+                                <option value="6">6 mesi</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="partner-usa">Il tuo partner userà almeno 3 mesi?</label>
+                            <select class="form-select" id="partner-usa">
+                                <option value="no">No / Non so</option>
+                                <option value="si">Sì</option>
+                            </select>
+                            <small>Se sì, il padre può avere 1 mese in più (7 mesi totali)</small>
+                        </div>
+
+                        <div class="form-group full-width" style="margin-top:var(--sp-4);">
+                            <button type="button" class="btn btn-primary btn-lg" id="calcola-btn" style="width:100%;">
+                                🧮 Calcola il tuo congedo
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Results -->
+                    <div class="calc-results" id="risultati">
+                        <h3 style="margin-top:0; margin-bottom: var(--sp-6); color: var(--clr-primary);">📊 Risultato
+                            del Calcolo</h3>
+
+                        <div class="result-cards" id="result-cards">
+                            <!-- Filled by JS -->
+                        </div>
+
+                        <div id="result-detail" style="margin-top: var(--sp-8);"></div>
+                    </div>
+                </div>
+
+                <!-- Guide Content -->
+                <h2 id="come-funziona">Come Funziona il Congedo Parentale</h2>
+
+                <p>Il congedo parentale (detto anche "congedo facoltativo") è un periodo di astensione dal lavoro
+                    riconosciuto ai genitori lavoratori dipendenti per prendersi cura del figlio nei suoi primi
+                    <strong>12 anni di vita</strong>.
+                </p>
+
+                <div class="info-box important">
+                    <div class="info-box-title">📌 Non confondere</div>
+                    <p><strong>Congedo di maternità obbligatorio</strong> (5 mesi, 80%) ≠ <strong>Congedo
+                            parentale</strong> (facoltativo, fino a 6 mesi per genitore). Il calcolatore sopra calcola
+                        il <strong>congedo parentale facoltativo</strong>.</p>
+                </div>
+
+                <h2 id="durata">Durata del Congedo Parentale</h2>
+
+                <div class="data-table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Chi</th>
+                                <th>Durata max individuale</th>
+                                <th>Limite coppia</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Madre</td>
+                                <td><strong>6 mesi</strong></td>
+                                <td rowspan="2" style="vertical-align: middle;"><strong>10 mesi</strong> (11 se il padre
+                                    usa ≥3 mesi)</td>
+                            </tr>
+                            <tr>
+                                <td>Padre</td>
+                                <td><strong>6 mesi</strong> (7 se usa ≥3 mesi)</td>
+                            </tr>
+                            <tr>
+                                <td>Genitore solo</td>
+                                <td colspan="2"><strong>11 mesi</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h2 id="retribuzione">Retribuzione durante il Congedo</h2>
+
+                <p>La Legge di Bilancio 2025 (confermata nel 2026) ha migliorato significativamente la retribuzione del
+                    congedo parentale:</p>
+
+                <div class="data-table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Periodo</th>
+                                <th>Retribuzione</th>
+                                <th>Fino a quando</th>
+                                <th>Note</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>1° mese</strong> (per ciascun genitore)</td>
+                                <td style="color: var(--clr-accent); font-weight:700;">80%</td>
+                                <td>Entro i 6 anni del figlio</td>
+                                <td>Novità dal 2024</td>
+                            </tr>
+                            <tr>
+                                <td><strong>2° mese</strong> (aggiuntivo)</td>
+                                <td style="color: var(--clr-secondary); font-weight:700;">60%</td>
+                                <td>Entro i 6 anni del figlio</td>
+                                <td>Novità dal 2025</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Mesi successivi</strong></td>
+                                <td style="font-weight:700;">30%</td>
+                                <td>Entro i 6 anni del figlio</td>
+                                <td>—</td>
+                            </tr>
+                            <tr>
+                                <td>Dopo i 6 anni del figlio</td>
+                                <td>30% o 0%</td>
+                                <td>Fino ai 12 anni</td>
+                                <td>Solo se reddito &lt; 2,5 volte la pensione minima</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="info-box bonus">
+                    <div class="info-box-title">💰 Esempio pratico</div>
+                    <p>Con una RAL di 28.000€ (circa 1.600€ netti/mese), il <strong>primo mese</strong> di congedo ti
+                        frutti circa <strong>1.280€ netti</strong>, il <strong>secondo circa 960€</strong>, e i restanti
+                        mesi circa <strong>480€</strong> ciascuno.</p>
+                </div>
+
+                <h2 id="come-richiedere">Come Richiedere il Congedo</h2>
+
+                <ol>
+                    <li><strong>Avvisa il datore di lavoro</strong>: con un preavviso di almeno <strong>5
+                            giorni</strong> (salvo diversa contrattazione)</li>
+                    <li><strong>Presenta domanda all'INPS</strong>: tramite il portale online con SPID/CIE/CNS → sezione
+                        "Congedo parentale"</li>
+                    <li><strong>Indica le date</strong>: puoi usare il congedo anche in modo frazionato (a mesi,
+                        settimane o giorni)</li>
+                    <li><strong>L'INPS eroga l'indennità</strong>: generalmente tramite anticipo del datore di lavoro in
+                        busta paga</li>
+                </ol>
+
+                <h2 id="congedo-paternita">Congedo di Paternità Obbligatorio</h2>
+
+                <p>Oltre al congedo parentale facoltativo, il padre lavoratore dipendente ha diritto al <strong>congedo
+                        di paternità obbligatorio di 10 giorni lavorativi</strong> (retribuzione al 100%), da fruire
+                    entro 5 mesi dalla nascita del figlio.</p>
+
+                <div class="info-box tip">
+                    <div class="info-box-title">💡 Consiglio</div>
+                    <p>I 10 giorni di congedo di paternità obbligatorio sono <strong>aggiuntivi</strong> rispetto al
+                        congedo parentale facoltativo. Usali tutti! Sono retribuiti al 100% e non si "consumano" dalla
+                        quota di congedo parentale.</p>
+                </div>
+
+                <!-- FAQ -->
+                <h2 id="faq" style="margin-top: var(--sp-16);">Domande Frequenti</h2>
+
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Quanti giorni di congedo parentale spettano nel 2026?
+                            <span class="arrow">▼</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                Ogni genitore ha diritto a un massimo di 6 mesi di congedo parentale (7 per il padre se
+                                ne usa almeno 3), con un limite complessivo per la coppia di 10 mesi (11 se il padre usa
+                                almeno 3 mesi). Il congedo è fruibile nei primi 12 anni di vita del figlio.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Posso usare il congedo a giorni o settimane?
+                            <span class="arrow">▼</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                Sì! Il congedo parentale può essere fruito in modo continuativo oppure frazionato: a
+                                mesi, settimane, giorni o persino ore. La modalità frazionata è molto utile per gestire
+                                impegni familiari puntuali senza esaurire tutto il congedo.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Il congedo parentale vale anche per le adozioni?
+                            <span class="arrow">▼</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                Sì, il congedo parentale spetta anche in caso di adozione e affidamento. I 12 anni entro
+                                cui fruire del congedo decorrono dalla data di ingresso del minore in famiglia, e il
+                                limite di età del minore è 12 anni.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Il congedo parentale è compatibile con l'assegno unico?
+                            <span class="arrow">▼</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                Assolutamente sì. L'assegno unico universale continua ad essere erogato regolarmente
+                                anche durante il periodo di congedo parentale. Sono due misure completamente
+                                indipendenti e cumulabili.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+
+            <aside class="sidebar">
+                <div class="sidebar-card">
+                    <h4>📑 In questa pagina</h4>
+                    <ul class="sidebar-links">
+                        <li><a href="#calcolatore">🧮 Calcolatore</a></li>
+                        <li><a href="#come-funziona">Come Funziona</a></li>
+                        <li><a href="#durata">Durata del Congedo</a></li>
+                        <li><a href="#retribuzione">Retribuzione</a></li>
+                        <li><a href="#come-richiedere">Come Richiedere</a></li>
+                        <li><a href="#congedo-paternita">Congedo Paternità</a></li>
+                        <li><a href="#faq">Domande Frequenti</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-card">
+                    <h4>🔗 Guide correlate</h4>
+                    <ul class="sidebar-links">
+                        <li><a href="bonus-famiglia.html">Bonus Famiglia 2026</a></li>
+                        <li><a href="guida-asilo-nido.html">Guida Asilo Nido</a></li>
+                        <li><a href="guida-dsa-bes.html">Guida DSA e BES</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-card"
+                    style="text-align:center; color: var(--clr-text-muted); font-size:0.85rem; min-height:250px; display:flex; align-items:center; justify-content:center; background: var(--grad-warm);">
+                    <span>— Spazio pubblicitario —</span>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="nav-logo" style="margin-bottom: var(--sp-2);">
+                        <div class="nav-logo-icon">🌱</div>
+                        <div class="nav-logo-text" style="color:white;">Crescere<span>Facile</span></div>
+                    </a>
+                    <p>Il portale italiano di guide gratuite per famiglie e genitori.</p>
+                </div>
+                <div>
+                    <h4>Guide</h4>
+                    <ul class="footer-links">
+                        <li><a href="bonus-famiglia.html">Bonus Famiglia 2026</a></li>
+                        <li><a href="guida-asilo-nido.html">Guida Asilo Nido</a></li>
+                        <li><a href="calcolatore-congedo.html">Calcolatore Congedo</a></li>
+                        <li><a href="guida-dsa-bes.html">Guida DSA e BES</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Altre Guide</h4>
+                    <ul class="footer-links">
+                        <li><a href="congedo-maternita.html">Congedo Maternità</a></li>
+                        <li><a href="bonus-mamme-lavoratrici.html">Bonus Mamme</a></li>
+                        <li><a href="vaccini-obbligatori.html">Vaccini Obbligatori</a></li>
+                        <li><a href="guida-scuola-infanzia.html">Scuola dell'Infanzia</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Info</h4>
+                    <ul class="footer-links">
+                        <li><a href="chi-siamo.html">Chi siamo</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 CrescereFacile.it — Tutti i diritti riservati</span>
+                <span>Strumento informativo, non sostituisce la consulenza professionale.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/congedo.js"></script>
+</body>
+
+</html>
